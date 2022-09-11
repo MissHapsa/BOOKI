@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* wildcard*/
+* {
+font-family: "raleway", "sans-serif";
+}
+a {
+    color: inherit;
+text-decoration: none;}
+
+body {
+    margin:0 0 0 0;
+}
+header {
+    margin:0 0 0 0;
+}
+footer {
+    margin:0 0 0 0;
+}
+
+/* navbar */
+nav {
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between}
+
+        nav a {
+            padding: 16px 
+            }
+
+.logo img {
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 0 50px;
+    width: 84px;
+    height: 40px ;}
+
+.sub-nav {
+    display: flex;
+    padding-right: 2%;}
+        .sub-nav a:hover {
+            color: #0065FC;
+            border-top: #0065FC 3px solid;
+            padding-top: 40px;}
+        .sub-nav a {
+            padding-top: 40px;
+        } 
+
+/* headings */
+.trouvez {
+    margin: 16px;
+    padding-left: 20px;
+}
+.bulle h1 {
+    font-size: larger;
+    }
+.bulle p {
+    font-size: smaller;
+    margin-top: -8px;
+    margin-bottom: 16px;
+   }
+
+/* SEARCH */
+.search-form {
+    display: flex;
+    margin: 16px;
+    padding-left: 20px;}
+
+.search-form i {
+    padding: 15px 16px;
+    background-color:  	#F2F2F2;
+    border-radius: 16px 0 0 16px;}
+
+.search-form input {
+    padding-left: 16px;
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 101%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-weight: bold;
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;}
+
+.search-form button {
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    border-radius: 0 16px 16px 0;
+    border: none;
+    font-size: 101%;
+    padding-right: 16px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+.fas.fa-search {
+    display: none;}
+
+/* FILTERS */
+.filters-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    padding: 16px;
+    padding-left: 40px;
+   
+}
+.filtre .fas {
+    color: blue;
+    background-color: #deebff;
+    padding: 16px;
+    border-radius: 50%;
+    margin: -3px;
+}
+
+.filtre .fa-child-reaching
+{
+    color: blue;
+    background-color: #deebff;
+    padding: 16px;
+    border-radius: 50%;
+    margin: -3px;
+}
+.filtre {
+    border: 2px solid lightgrey;
+    border-radius: 32px;
+    padding-right: 16px ;}
+
+.filtre span {
+    font-weight: bold;
+    padding: 16px;
+}
+.filtre:hover {
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+    cursor: pointer;
+} 
+/* INFOS */
+.INFOS {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    padding-left: 23px;}
+
+.INFOS .fas {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    border: 1px solid lightgrey;
+    color: blue;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-bottom: 4px;}
+
+    
+
+/* LISTE HEBERGEMENTS */
+
+.listes {
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+    margin: 16px;
+    padding-left: 25px;
+    padding-bottom: 25px;}
+.marseille h3 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.marseille {
+    background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 65%;  
+    height: 560px;
+    padding: 16px;
+    margin-top: 10px;
+}
+.populaires {
+    background-color: #F2F2F2;
+	border-radius: 20px;
+    width: 26%; 
+    height: 560px;
+    padding: 16px;
+    margin-top: 10px;}
+
+.titrepopulaire {
+  display: flex;
+  padding-left: 5%;
+}
+    /* liste des appartements */
+.cartes
+    { display: flex;
+        width: 95%;
+        padding-left: 18px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 16px;}
+      
+.resultat {   
+    width: 30% ;   
+    background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 2px 2px #c0c0c0;
+	line-height: 5px;
+	margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;}
+
+.resultat:hover {
+    transform: scale(1.015);
+    cursor: pointer;}
+
+.resultat p { 
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    padding-left: 16px;
+}
+.blue {
+    color: blue;
+}
+
+.grey {
+    color: #F2F2F2;
+}
+.resultat img {
+    margin: 4px;
+	height: 110px;
+    width: 98%;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;}
+
+    .afficher
+    {margin-top: 0px;
+    margin-left: 20px;
+    }  
+    .listes a {
+        margin-left: 20px;
+    }
+
+    .afficher:hover
+    {cursor: pointer;
+    text-decoration: underline;}
+
+/* populaires */
+.black {
+    padding: 6.4%;
+    padding-left: 100px;
+    display: flex;
+}
+.trio {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    padding-left: 40px;}
+    
+
+.resultat1 {   
+	display: flex;
+	width: 100%;
+    height: 30%;
+    margin-top: 70px;
+	margin-bottom: 40px;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+    background-color: white;
+	box-shadow: 0 4px 4px #c0c0c0;
+    font-size: small;
+    align-items: center;
+    margin-right:15%;}
+        .resultat1 img {
+            width: 36%;
+	        border-radius: 20px 0 0 20px;
+	        height: 115px;
+	        margin: 1px;
+	        object-fit: cover;}
+
+.resultat2 {   
+	display: flex;
+	width: 100%;
+    height: 30%;
+	margin-bottom: 40px;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+    background-color: white;
+	box-shadow: 0 4px 4px #c0c0c0;
+    align-items: center;
+    font-size: small;
+    margin-right:15%;}
+.resultat2 img {
+    width: 36%;
+	border-radius: 20px 0 0 20px;
+	height: 115px;
+	margin: 1px;
+	object-fit: cover;}
+
+.resultat3 {   
+        display: flex;
+        width: 100%;
+        height: 30%;
+        border: 3px solid #ffffff;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 2px 2px #c0c0c0; 
+        font-size: small;
+        align-items: center;
+        margin-right:15%;}
+.resultat3 img {
+        width: 36%;
+        border-radius: 20px 0 0 20px;
+        height: 115px;
+        margin: 1px;
+        object-fit: cover;}
+.bloc3,.bloc2,.bloc {
+   display: flex;
+   flex-direction: column;
+   margin-top: 36px;}
+.soleil1 {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   margin-left: 10%;
+   margin-top: -20px;
+   margin-bottom: 5px;}
+.soleil2 {
+    margin-left: 10%;
+    width: 100%;}
+.etoilesoleil {
+    margin-left: 10%;
+    font-family: "raleway", "sans-serif";
+    padding-top: 45px;}
+
+.eau1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 10%;
+    margin-top: -20px;
+    margin-bottom: 5px;}
+.eau2 {
+    margin-left: 10%;
+    width: 100%;}
+.etoileeau {
+    margin-left: 10%;
+    font-family: "raleway", "sans-serif";
+    padding-top: 45px;}
+
+.bleu1 {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-left: 10%;
+        margin-top: -20px;
+        margin-bottom: 5px;
+        width: 100%;}
+.bleu2 {
+        margin-left: 10%;
+        width: 100%;}
+.bleu3 {
+        margin-left: 10%;}
+.etoilebleu    {
+        margin-left: 10%;
+        font-family: "raleway", "sans-serif";
+        padding-top: 60px;}
+
+/* ACTIVITES A MARSEILLE */
+
+.sorties h4 {
+    padding-left: 40px;
+    font-size: larger;}
+
+.activites
+{
+    display: flex;
+    max-width: 94.5%;
+    padding-left: 40px;
+    height: 390px;}
+
+    .colonne1 {
+            width: 23%;
+            border: 1PX solid #ffffff; 
+	        border-radius: 20px;
+	        box-shadow: 0 4px 4px #c0c0c0;
+            background-color: white;}   
+                .port 
+                { width: 100%;
+                height: 390px;}
+
+                .port img 
+                {   width: 100%; 
+                    height: 88%;
+                    border-radius: 20px 20px 0px 0px;
+                    object-fit: cover;
+                    margin-bottom: 10%;}
+                .port p {
+                    margin: -16px;
+                    padding-left: 32px;}
+    .colonne2 {
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 23%;}
+            .colonnefort {
+                margin-bottom: 40px;
+                border: 1PX solid #ffffff; 
+                border-radius: 20px;
+                box-shadow: 0 4px 4px #c0c0c0;
+                background-color: white;
+                width: 100%;
+                }  
+                    .fort {
+                            height: 210px;
+                            align-items: center;}
+
+                    .fort img { width:  100%;
+                            height: 165px; 
+                            border-radius: 20px 20px 0 0;
+                            oBject-fit: cover;
+                            object-position: -0px -105px;
+                            margin-bottom: 8%;}
+                    .fort p {
+                                margin: -12px;
+                                padding-left: 32px;}
+            .colonneiles {
+                border: 1PX solid #ffffff; 
+	            border-radius: 20px;
+	            box-shadow: 0 4px 4px #c0c0c0;
+                background-color: white;
+                width: 100%;}
+                    .iles {
+                    height: 102px;
+                    margin-bottom: 32px;
+                    align-items: center;}
+
+                    .iles img {
+                        width: 100% ;
+                        height: 95px;
+                        border-radius: 20px 20px 0 0;
+                        object-fit: cover;
+                        object-position: 0px -6px; 
+                        margin-bottom: 8%;}
+                    .iles p {
+                            margin: -13px;
+                            padding-left: 32px;}                        
+    .colonne3 {
+        width: 23%;
+        border: 1PX solid #ffffff; 
+        border-radius: 20px;
+        box-shadow: 0 4px 4px #c0c0c0;
+        background-color: white;}
+                .parc 
+                    { width: 100%;
+                    height: 390px;}
+
+                .parc img 
+            {       width: 100%;
+                    height: 88%;
+                    border-radius: 20px 20px 0px 0px;
+                    object-fit: cover;
+                    margin-bottom: 10%;}
+                .parc p {
+                        margin: -16px;
+                        padding-left: 32px;}
+    .colonne4 {
+            padding-left: 40px;
+            margin-top: 0;
+            height: 389px;
+            width: 23%;}
+            .colonnedame {
+                border: 1PX solid #ffffff; 
+	            border-radius: 20px;
+	            box-shadow: 0 4px 4px #c0c0c0;
+                background-color: white;;
+                margin-bottom: 40px;
+                margin-top: -1px;
+                width: 100%;}
+                
+                    .dame { 
+                        height: 180px;
+                        align-items: center;}
+                    .dame img { 
+                        width: 100%;
+                        height: 140px; 
+                        border-radius: 20px 20px 0 0;
+                        oBject-fit: cover;}
+                    .dame p {
+                            margin: 6px;
+                            padding-left: 15px;}                      
+            .colonnelongchamp {
+                border: 1PX solid #ffffff; 
+	            border-radius: 20px;
+	            box-shadow: 0 4px 4px #c0c0c0;
+                background-color: white;
+                width: 100%;}
+                    .longchamp { 
+                        height: 165px;
+                        align-items: center;}
+                    .longchamp img { 
+                        width: 100%;
+                        height: 125px; 
+                        border-radius: 20px 20px 0 0;
+                        oBject-fit: cover;
+                        margin-bottom: 8%;}
+                    .longchamp p {
+                            margin: -14px;
+                            padding-left: 32px;}
+                
+/* FOOTER */
+.cadre
+    {   background-color: #F2F2F2;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        color: black;
+        width:100%;
+        height: 240px;}
+
+     .colonnefooter1,.colonnefooter2,.colonnefooter3 {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 14%;
+        }
+    .cadre p 
+    { 
+        font-size: medium;
+        margin-bottom: 10px;
+        margin-left: 34px;
+      }
+    .cadre a {
+        font-size: large;
+        margin-left: 34px
+    }
+    .colonnefooter1 
+        {margin-top: 30px;}
+
+
+ 
