@@ -1,0 +1,893 @@
+
+/******* Données supplémentaire (font...) *******/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/******* style global site *******/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/******* style tout le body *******/
+
+
+/******* 
+*******************************************
+Header version desktop 
+*******************************************
+*******/
+
+header {
+   display: flex;
+   margin: 0px 30px 10px 30px;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+/******* flex-end pour la nav à droire
+ et margin-left pour séparer le bloc logo*******/
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+    border-top: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+nav a { 
+    text-decoration: none;
+    margin: 0 35px;
+    color: black;
+    font-weight: 600;
+
+   
+}
+
+nav ul {
+    padding: 0;
+}
+nav li:hover, nav li:focus {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+/******* Header version tablet *******/
+
+
+/******* Header version mobile *******/
+@media screen and (max-width: 768px) {
+
+    header{
+        display: block;
+        margin: 0 0;
+    }
+    .logo {
+        margin: auto;
+        text-align: center;        
+    }
+
+    
+    nav a {    
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;    
+    }
+
+    nav li {
+        border-bottom: 2px #F2F2F2 solid;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+    nav li:hover, nav li:focus {
+        width: 50%;
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        text-align: center;
+    }
+    nav a:hover, nav a:focus {
+    color:  black;
+    border-top: none;
+    text-align: center;
+    margin-left: 0px;      
+    }
+}
+  
+
+/******* 
+*******************************************
+section h1 p formulaire de recherche
+*******************************************
+*******/
+
+.h1_form {
+    width: 45%;
+    margin: 30px 30px 15px 30px;
+}
+
+.h1_form h1 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.h1_form p {
+    font-size: 12px;
+}
+
+form {
+    max-width: 100%;
+}
+
+/******* css button search et icon *******/
+
+.search_form {
+   display: flex;
+   height: 40px;
+   margin-top: 20px;
+}
+
+.icon_map_search_form {
+    background-color: #F2F2F2;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border-radius: 15px 0 0 15px;
+    
+}
+
+.fa-map-marker-alt {
+    position: relative;
+    top: 30%;
+    
+}
+
+.input_search_form {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    color: black;
+    font-weight: 600;
+    
+}
+
+::placeholder {
+    color: black;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.button_icon_search_form {
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    display: none;
+}
+
+.button_text {
+    height: 40px;
+    min-width: 130px;
+    background-color: #3D65FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+
+.fa-search {
+    color: white;
+}
+
+/******* PC section h1 p formulaire de recherche *******/
+
+
+
+/******* TABLET section h1 p formulaire de recherche *******/
+
+
+/******* MOBILE section h1 p formulaire de recherche *******/
+@media screen and (max-width: 768px) {
+
+    .h1_form {
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .h1_form h1 {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    .button_icon_search_form {
+        border-radius: 15px 15px 15px 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        left: -17px;
+    }
+
+    .button_text {
+        display: none;
+    }
+
+    .fa-search {
+        font-size: 15px;
+    }
+
+    .button_icon_search_form {
+        background-color: #0065FC;
+        border: none;
+        display: flex;
+        align-items: center
+        
+    }
+    
+}
+
+
+/******* 
+*******************************************
+section filtres
+*******************************************
+*******/
+
+.filter h3 {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.block_all_filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.block_filter, .animaux {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+.block_filter {
+    margin-right: 20px;
+}
+
+.icon_filter {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    z-index: 1;
+    
+}
+
+
+
+.block_text_filter {
+    width: auto;
+    border: 2px solid #F2F2F2;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+    border-left: none;
+    margin-left: -20px;
+    
+}
+
+.block_text_filter:hover {
+    background-color: #DEEBFF;
+}
+
+.fa-money-bill-wave, .fa-heart, .fa-dog, .fa-child {
+    color: #0065FC;
+}
+
+.t_eco {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 29px;
+    padding-right: 15px;
+}
+
+
+
+
+/******* 
+*******************************************
+section informations
+*******************************************
+*******/
+
+.info_suppl {
+    margin-bottom: 25px;
+    display: flex;
+    align-content: center;
+    margin: 20px 30px 30px 30px;
+}
+
+.text_info_suppl {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.icon_info {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #F2F2F2;
+    
+}
+
+.fa-info {
+    color: #0065FC;
+    font-size: 12px;
+}
+ 
+.box_text_info_suppl {
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+
+/******* 
+************************************************
+section card hebergements et les plus populaires
+************************************************
+*******/
+
+/******* 
+section card hebergements 
+*******/
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px 0px;
+}
+
+#hosting {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    border-radius: 25px;
+    padding: 32px;
+    min-width: 250px;
+    width: 65%;
+    margin-right: 50px;
+}
+
+.all_card_hosting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 15px 0;
+    margin-right: -30px;
+}
+
+.card_hebergement {
+    display: flex;
+    background: white;
+    min-width: 240px;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    min-height: 170px;
+    width: 29%;
+    transition: transform 0.2s;
+}
+
+.card_hebergement:hover {
+    background-color: #F2F2F2;
+}
+
+.block_img_hebergement {
+    height: 100px;
+}
+
+.img_hebergement {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.block_txt_hebergement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    row-gap: 5px;
+}
+
+.title_card_hebergement {
+    margin: 0;
+    padding-top: 3px;
+    min-width: 205px;
+}
+
+.price_card_hebergement {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-star {
+    color: #0065FC;
+    font-size: 12px;
+
+}
+.pas_evalue {
+    color: #F2F2F2;
+}
+
+.block_txt_hebergement h3, p {
+    color: black;
+}
+
+.block_txt_hebergement h3 {
+    font-size: 16px;
+}
+
+.block_txt_hebergement p {
+    font-size: 14px;
+}
+
+#hosting h2{
+    font-size: 21px;
+
+}
+
+/******* 
+section card les plus populaires
+*******/
+.plus_pop {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 200px;
+    background: #F2F2F2;
+    border-radius: 25px;
+    padding: 32px 25px;
+}
+
+.plus_pop h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+}
+
+.all_card_pop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    max-height: 619px;
+    row-gap: 30px;
+}
+
+.card_pop {
+    min-width: 100%;
+    background-color: #ffffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(225 225 225);
+    min-height: 130px;
+    max-height: 130px;
+    transition: transform 0.2s;
+}
+
+.card_pop:hover {
+    background-color: #F2F2F2;
+    box-shadow: 3px 10px 3px rgb(225 225 225);
+}
+
+.img_card_pop {
+    width: 35%;
+}
+
+.img_pop {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.block_txt_pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0 0 5px;
+    row-gap: 5px;
+}
+
+.title_card_pop {
+    margin: 0;
+    max-width: 185px;
+}
+
+.price_card_pop {
+    margin: 0 0 0 0;
+    padding-top: 7px;
+}
+
+.note_pop {
+    padding-bottom: 5px;
+}
+
+.block_txt_pop h3, p {
+    color: black;
+}
+
+.block_txt_pop h3 {
+    font-size: 16px;
+}
+
+.block_txt_pop p {
+    font-size: 14px;
+}
+
+
+
+/******* TABLET section CARD HEBERGEMENTS *******/
+
+@media screen and (max-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .plus_pop {
+        width: 100%;
+    }
+
+    #hosting {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+}
+
+/******* MOBIL section CARD HEBERGEMENTS *******/
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 0;
+        
+    }
+
+    .plus_pop {
+        width: 100%;        
+        border-radius: 0 0;
+    }
+
+    #hosting {
+        width: 100%;
+        background-color: white;
+        padding-right:70px;
+        margin-top: 0;
+        margin-bottom: -31px;
+    }
+    .all_card_hosting {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_hebergement {
+        width: 100%;
+    
+    }
+
+    #hosting h2 {
+        margin-top: 0;
+        font-size: 21px;
+
+    }
+
+}
+
+/******* 
+*******************************************
+section activités marseille
+*******************************************
+*******/
+#activity {
+    height: 591px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+.titre_activity {
+    margin-bottom: 30px;
+}
+
+.all_card_activity {
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.activity_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    width: 25%;
+}
+
+.activity_card {
+    background-color: #ffffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #0000002e;
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.activity_box_img {
+    height: 90%;
+}
+
+.activity_img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.activity_box_txt {
+    padding: 10px 19px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 10px;
+
+}
+
+.activity_little_txt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+.col2 {
+    height: 100%;
+}
+
+.carte2 { 
+    height: 55% ;
+}
+
+.carte2 .activity_box_img {
+    height: 82%;
+}
+
+.carte3 {
+    height: 35%;
+}
+
+.carte3 .activity_box_img {
+    height: 72%;
+}
+
+.col4 {
+    height: 100%;
+}
+
+.carte5 {
+    height: 35%;
+}
+.carte5 .activity_box_img {
+    height: 72%;
+}
+
+.carte6 {
+    height: 55% ;
+}
+
+.carte6 .activity_box_img {
+    height: 82%;
+}
+
+.activity_box_txt h4 {
+    color: black;
+}
+
+.activity_box_txt h4 {
+    font-size: 16px;
+}
+
+.activity_card:hover {
+    background-color: #F2F2F2;
+    box-shadow: 3px 10px 3px rgb(225 225 225);
+}
+
+
+/******* MOBILE section activités *******/
+@media screen and (max-width: 768px) {
+
+    #activity {
+        height: auto;
+    }
+
+    #activity h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 21px;
+    }
+    
+    .all_card_activity {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity_col {
+        width: 100%;
+        row-gap: 0px;
+    }
+    .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
+        height: 170px;
+    }
+
+    .carte1, .carte2, .carte3, .carte4, .carte5 {
+        margin-bottom: 30px;
+    }
+
+    .carte1 .activity_box_img {
+        height: 74%;
+    }
+    
+    .carte2 .activity_box_img {
+        height: 74%;
+    }
+
+    .carte3 .activity_box_img {
+        height: 74%;
+    }
+    
+    .carte4 .activity_box_img {
+        height: 74%;
+    }
+
+    .carte5 .activity_box_img {
+        height: 74%;
+    }
+
+    .carte6 .activity_box_img {
+        height: 74%;
+    }
+    
+}
+
+
+
+
+
+/******* 
+*******************************************
+section FOOTER
+*******************************************
+*******/
+footer {
+    background-color: #f2F2F2;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 14px;
+    margin: 0 30px 0 30px;
+}
+
+footer ul {
+    padding-left: 0px;
+    
+}
+
+footer li {
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: black;
+}
+
+.block1, .block2, .block3, .block4 {
+    margin: 0px 30px;
+}
+
+.au_choix h3, .au_choix a {
+    color: #F2F2F2;
+}
+
+
+/******* TABLET footer *******/
+
+
+/******* MOBILE footer *******/
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .block1, .block2, .block3 {
+        margin: 0px 30px;
+    }
+
+    .au_choix {
+        display: none;
+    }
+}
